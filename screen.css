@@ -2,3 +2,17 @@
 a.active {
     font-weight: bold;
 }
+
+.earth
+{
+    max-width: 100%;
+    max-height: 80vh;
+    color: #00FF00;
+}
+
+.moon
+{
+    max-width: 50%;
+    max-height: 60vh;
+    color: #808080;
+}
