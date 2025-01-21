@@ -1,18 +1,55 @@
-/* Add screen styles below */
-a.active {
-    font-weight: bold;
+body {
+    font-family: Arial, sans-serif;
+    background: 
+        linear-gradient(rgba(48, 25, 52, 0.9), rgba(48, 25, 52, 0.9)),
+        url('imgs/star-2-svgrepo-com.svg') repeat;  
+    background-size: 50px 50px;
+    color: #ffffff;
+    margin: 0;
+    padding: 2rem;
+    text-align: center;
+    line-height: 1.6;
 }
 
-.earth
-{
-    max-width: 100%;
-    max-height: 80vh;
-    color: #00FF00;
+h1 {
+    margin-bottom: 1.5rem;
 }
 
-.moon
-{
-    max-width: 50%;
-    max-height: 60vh;
-    color: #808080;
+p {
+    color: #cccccc;
+    margin-bottom: 1.5rem;
+}
+
+.earth img {
+    width: 200px;
+    height: 200px;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.moon img {
+    width: 100px;
+    height: 100px;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+.earth img,
+.moon img {
+    fill: #ffffff;
+    filter: invert(1) brightness(100);
+}
+
+.earth.inactive img {
+    opacity: 0.5;
+}
+
+.moon.active img {
+    opacity: 1;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 2rem;
 }
