@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     background: 
-        linear-gradient(rgba(48, 25, 52, 0.9), rgba(48, 25, 52, 0.9)),
+        linear-gradient(rgba(2,22,49, 0.9), rgba(2,22,49, 0.9)),
         url('imgs/star-2-svgrepo-com.svg') repeat;  
     background-size: 50px 50px;
     color: #ffffff;
@@ -18,6 +18,17 @@ h1 {
 p {
     color: #cccccc;
     margin-bottom: 1.5rem;
+    margin: 1.5rem auto;
+    max-width: 600px;
+    text-align: justify;
+}
+
+.credits {
+    color: #0004ff;
+    margin-bottom: 1.5rem;
+    margin: 1.5rem auto;
+    max-width: 600px;
+    text-align: justify;
 }
 
 .earth img {
@@ -52,4 +63,35 @@ a {
     text-decoration: none;
     display: inline-block;
     margin-right: 2rem;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        max-width: 90%; /* Reduce width for smaller screens */
+        margin: 1rem auto;
+        font-size: 0.9rem;
+    }
+
+    .earth img {
+        width: 150px; /* Adjust size for smaller screens */
+        height: 150px;
+    }
+
+    .moon img {
+        width: 80px; /* Adjust size for smaller screens */
+        height: 80px;
+    }
+
+    a {
+        margin-right: 1rem; /* Reduce spacing for links */
+        font-size: 0.9rem;
+    }
 }
